@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for alphabet in {a..z} 
+do
+   upper=${alphabet^^}
+   mv ./files/$alphabet* $alphabet/
+   mv ./files/$upper* $alphabet/
+done
